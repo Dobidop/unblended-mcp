@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "unblended-mcp"
+version = "0.1.0"
+description = "MCP server exposing headless Blender via unblended."
+requires-python = ">=3.10"
+dependencies = [
+    "mcp",
+]
