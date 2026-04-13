@@ -590,4 +590,7 @@ def _cleanup():
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
+    # Start Blender eagerly so the session is warm before any tool call.
+    # This avoids MCP client timeouts on the first invocation.
+    _get_session()
     mcp.run()
